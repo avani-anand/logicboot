@@ -47,7 +47,7 @@ const About = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <SectionWrapper className="bg-gradient-to-br from-primary-50 to-blue-100">
+      <SectionWrapper className="bg-gradient-to-br from-primary-300 to-blue-400">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ const About = () => {
 
 
    {/* Services */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper >
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -128,7 +128,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="card group hover:shadow-lg transition-all duration-300 border-8"
             >
-              <div className="w-16 h-16 bg-primary-200 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-400 transition-colors">
+              <div className="w-16 h-16 bg-primary-400 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-100 transition-colors">
                 <span className="text-3xl ">{service.icon}</span>
               </div>
               <h3 className="font-geist text-xl font-semibold text-gray-400 mb-3">
@@ -202,7 +202,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 h-full">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-600 h-full">
               <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
                 <span className="text-3xl">🔮</span>
               </div>
@@ -227,7 +227,7 @@ const About = () => {
 
 
       {/* Call to Action */}
-      <SectionWrapper className="relative min-h-[260px] sm:min-h-[400px] overflow-hidden border border-gray-600">
+      <SectionWrapper className="relative min-h-[260px] sm:min-h-[400px] overflow-hidden border border-gray-800">
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -246,7 +246,7 @@ const About = () => {
           <div className="font-geist flex flex-col sm:flex-row gap-3 justify-center">
             <button
               onClick={() => setIsContactModalOpen(true)}
-              className="btn-secondary bg-white text-black  dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800 py-2 px-4 text-sm"
+              className="font-geist btn-primary py-2 px-4 text-sm"
             >
               Get in Touch
             </button>

@@ -40,7 +40,7 @@ const Products = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen pt-12">
       {/* Hero Section */}
       <SectionWrapper className="bg-gradient-to-br from-primary-50 to-blue-600">
         <motion.div
@@ -49,10 +49,10 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="font-geist text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="font-geist text-3xl md:text-6xl font-bold text-white mb-6">
             Our Products
           </h1>
-          <p className="font-manrope text-xl text-white leading-relaxed">
+          <p className="font-manrope text-base md:text-xl text-white leading-relaxed">
             Discover our range of AI-powered solutions designed to revolutionize healthcare and household automation
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ const Products = () => {
 
       {/* Products Grid */}
       <SectionWrapper className="bg-gray-200 text-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1  gap-8 px-8  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 px-4 sm:px-6">
           {products.map((product, index) => (
             <ProductCard
               key={product.id}
@@ -85,7 +85,7 @@ const Products = () => {
 
 
       {/* Call to Action */}
-      <SectionWrapper className="border border-gray-600">
+      <SectionWrapper className="border border-gray-900">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,22 +93,22 @@ const Products = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="font-geist text-3xl font-bold text-gray-200 mb-6">
+          <h2 className="font-geist text-2xl md:text-3xl font-bold text-gray-200 mb-6">
             Ready to Transform Your World?
           </h2>
-          <p className="font-manrope text-xl  text-gray-300 mb-8 leading-relaxed">
+          <p className="font-manrope text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
             Join the revolution in AI-powered robotics and experience the future of healthcare and automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@logicboots.com"
-              className="font-geist btn-secondary bg-white text-primary-600 hover:bg-gray-100"
+              className="font-geist btn-primary"
             >
               Get in Touch
             </a>
             <Link
               to="/about"
-              className="font-geist btn-secondary bg-transparent border-2 border-white text-white hover:bg-white/10"
+              className="font-geist btn-primary"
             >
               Learn More About Us
             </Link>

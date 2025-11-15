@@ -397,7 +397,7 @@ const ProductDetail = () => {
       </SectionWrapper>
 
       {/* === DYNAMIC Call to Action === */}
-			<SectionWrapper noPadding className={`relative min-h-[160px]  sm:min-h-[260px] md:min-h-[400px] overflow-hidden border border-gray-600`}>
+			<SectionWrapper noPadding className={`relative min-h-[160px]  sm:min-h-[260px] md:min-h-[400px] overflow-hidden border border-gray-800`}>
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -414,13 +414,13 @@ const ProductDetail = () => {
 					<div className="font-geist flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
 						<button
 							onClick={() => setIsModalOpen(true)}
-							className="btn-secondary bg-white text-black hover:bg-gray-100 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800 py-1.5 px-3 text-xs sm:py-2 sm:px-4 sm:text-sm rounded-md"
+							className="font-geist btn-primary py-1.5 px-3 text-xs sm:py-2 sm:px-4 sm:text-sm rounded-md"
 						>
 							Get in Touch
 						</button>
 						<Link
 							to="/about"
-							className="btn-secondary bg-transparent text-white border-2 border-white hover:bg-white/10 dark:bg-white dark:text-gray-600 dark:hover:bg-gray-100 dark:border-gray-200 py-1.5 px-3 text-xs sm:py-2 sm:px-4 sm:text-sm rounded-md"
+							className="font-geist btn-primary py-1.5 px-3 text-xs sm:py-2 sm:px-4 sm:text-sm rounded-md"
 						>
 							Learn More About Us
 						</Link>

@@ -63,6 +63,27 @@
     transition: all 0.2s ease;
   }
 
+  /* Hover scale for primary/secondary buttons (only on devices that support hover) */
+  @media (hover: hover) and (pointer: fine) {
+    .btn-primary,
+    .btn-secondary,
+    .btn {
+      transition: transform 160ms ease, box-shadow 160ms ease;
+      will-change: transform;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn:hover,
+    a.btn-primary:hover,
+    a.btn-secondary:hover,
+    button.btn-primary:hover,
+    button.btn-secondary:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 10px 24px rgba(2,6,23,0.12);
+    }
+  }
+
   .btn-secondary {
     background-color: transparent;
     color: hsl(var(--foreground));

@@ -286,34 +286,34 @@ const Home = () => {
         </div>
 
         {/* === EDITED SECTION START === */}
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-6 items-center">
           {/* Top Row Logos (Desktop) */}
           <motion.img
             src={logo1}
             alt="TIDES IIT Roorkee"
-            className="w-auto h-[80px] lg:h-[140px] justify-self-center col-span-1 lg:col-span-2"
+            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-span-2"
           />
           <motion.img
             src={logo2}
             alt="Indian Institute of Technology Roorkee"
-            className="w-auto h-[40px] lg:h-[70px] justify-self-center col-span-1 lg:col-span-2"
+            className="w-auto h-[32px] lg:h-[56px] justify-self-center col-span-1 lg:col-span-2 bg-white"
           />
           <motion.img
             src={logo3}
             alt="Software Technology Parks of India"
-            className="w-auto h-[70px] lg:h-[120px] justify-self-center col-span-2 lg:col-span-2"
+            className="w-auto h-[56px] lg:h-[96px] justify-self-center col-span-2 lg:col-span-2"
           />
 
           {/* Bottom Row Logos (Desktop) */}
           <motion.img
             src={logo4}
             alt="Electropreneurial Park"
-            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-start-2 lg:col-span-2"
+            className="w-auto h-[48px] lg:h-[80px] justify-self-center col-span-1 lg:col-start-2 lg:col-span-2"
           />
           <motion.img
             src={logo5}
             alt="MedTech"
-            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-span-2"
+            className="w-auto h-[48px] lg:h-[80px] justify-self-center col-span-1 lg:col-span-2"
           />
         </div>
         {/* === EDITED SECTION END === */}
