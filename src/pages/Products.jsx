@@ -42,37 +42,50 @@ const Products = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <SectionWrapper className="bg-gradient-to-br from-primary-50 to-blue-50">
+      <SectionWrapper className="bg-gradient-to-br from-primary-50 to-blue-600">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="font-geist text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="font-geist text-4xl md:text-6xl font-bold text-white mb-6">
             Our Products
           </h1>
-          <p className="font-manrope text-xl text-gray-600 leading-relaxed">
+          <p className="font-manrope text-xl text-white leading-relaxed">
             Discover our range of AI-powered solutions designed to revolutionize healthcare and household automation
           </p>
         </motion.div>
       </SectionWrapper>
 
       {/* Products Grid */}
-      <SectionWrapper className="bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <SectionWrapper className="bg-gray-200 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1  gap-8 px-8  ">
           {products.map((product, index) => (
             <ProductCard
               key={product.id}
               {...product}
               delay={index * 0.1}
             />
+
           ))}
         </div>
       </SectionWrapper>
 
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Call to Action */}
-      <SectionWrapper className="bg-primary-600">
+      <SectionWrapper className="border border-gray-600">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -80,10 +93,10 @@ const Products = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="font-geist text-3xl font-bold text-white mb-6">
+          <h2 className="font-geist text-3xl font-bold text-gray-200 mb-6">
             Ready to Transform Your World?
           </h2>
-          <p className="font-manrope text-xl text-primary-100 mb-8 leading-relaxed">
+          <p className="font-manrope text-xl  text-gray-300 mb-8 leading-relaxed">
             Join the revolution in AI-powered robotics and experience the future of healthcare and automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

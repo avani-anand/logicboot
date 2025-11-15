@@ -86,8 +86,8 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Banner */}
       <Banner />
-      <SectionWrapper className="bg-gray-50 font-manrope">
-        <Marquee repeat={4} className="[--duration:20s]">
+      <SectionWrapper className="bg-gray-50 font-manrope ">
+        <Marquee repeat={4} className="[--duration:20s] text-gray-700">
           <span>Robotics</span>
           <Divider orientation="vertical" flexItem />
           <span>Artificial Intelligence</span>
@@ -111,7 +111,7 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-geist font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-geist font-bold text-gray-200 mb-6">
             Revolutionizing Healthcare & Automation
           </h2>
           <p className="text-lg font-manrope text-gray-600 mb-8 leading-relaxed">
@@ -185,7 +185,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-500 mb-4">
             Featured in MedTech
           </motion.h2>
           <motion.p
@@ -205,10 +205,10 @@ const Home = () => {
               <img src="/q7.jpg" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
+              <Typography variant="h5" color="blue-gray" className="mb-2 text-gray-500">
                 AtharvaAI
               </Typography>
-              <Typography>
+              <Typography className="text-gray-600">
                 A futuristic AI Co-Pilot for General Surgery. Provides real-time
                 inputs to assist surgeons during operations.
               </Typography>
@@ -224,10 +224,10 @@ const Home = () => {
               <img src="/q6.jpg" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
+              <Typography variant="h5" color="blue-gray" className="mb-2 text-gray-500">
                 CoeurAI - Stethoscope
               </Typography>
-              <Typography>
+              <Typography className="text-gray-600">
                 Smart stethoscope with AI-powered diagnosis and remote patient
                 monitoring capabilities.
               </Typography>
@@ -252,7 +252,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-500 mb-4">
             Our Products
           </motion.h2>
           <motion.p
@@ -280,7 +280,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-500 mb-4">
             Supported By
           </motion.h2>
         </div>
@@ -321,7 +321,7 @@ const Home = () => {
 
       {/* Industries Marquee */}
       <SectionWrapper className="bg-white">
-        <Marquee repeat={4} className="[--duration:20s] font-manrope">
+        <Marquee repeat={4} className="[--duration:20s] font-manrope text-gray-700">
           <span>Healthcare</span>
           <Divider orientation="vertical" flexItem />
           <span>Railways</span>

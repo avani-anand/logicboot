@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-1">
-              <span className="font-geist text-xl font-bold text-gray-900">
+              <span className="font-geist text-xl font-bold text-gray-400">
                 LogicBoots
               </span>
             </div>
@@ -20,7 +20,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-manrope font-bold text-gray-900 mb-4">
+            <h3 className="font-manrope font-bold text-gray-400 mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -58,7 +58,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-manrope font-bold text-gray-900 mb-4">
+            <h3 className="font-manrope font-bold text-gray-400 mb-4">
               Contact
             </h3>
             <ul className="space-y-2">

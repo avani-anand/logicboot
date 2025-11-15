@@ -9,31 +9,121 @@
     scroll-behavior: smooth;
   }
 
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 13%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 188 85% 53%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 292 69% 48%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 188 85% 53%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 13%;
+    --card-foreground: 210 40% 98%;
+    --primary: 188 85% 53%;
+    --secondary: 217.2 32.6% 17.5%;
+    --border: 217.2 32.6% 17.5%;
+  }
+
+  * { box-sizing: border-box; }
+
   body {
     font-family: "Inter", system-ui, sans-serif;
-    @apply bg-white text-gray-900;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
   }
 
   .btn-secondary {
-    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-800 font-medium px-6 py-3 rounded-lg transition-all duration-200;
+    background-color: transparent;
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--border) / 0.12);
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease;
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 transition-all duration-300 hover:shadow-lg hover:border-gray-200;
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border: 1px solid hsl(var(--border) / 0.08);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.15s ease;
   }
 
   .section-padding {
     @apply py-16 px-4 sm:px-6 lg:px-8;
+    background-color: hsl(var(--background) / 0.04);
   }
 
   .container-custom {
     @apply max-w-7xl mx-auto;
+  }
+
+  /* Override utility `bg-white` usages to use themed card background so
+     white blocks are removed site-wide (keeps text color intact). */
+  .bg-white {
+    background-color: hsl(var(--card)) !important;
+    color: hsl(var(--card-foreground)) !important;
+  }
+
+  /* Catch other common light background utilities and map them to theme */
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-gray-200,
+  .bg-gray-0,
+  .bg-neutral-50 {
+    background-color: hsl(var(--background) / 0.06) !important;
+    color: hsl(var(--foreground)) !important;
+  }
+
+  /* Darken panels that used white so they match the card theme */
+  .bg-white\/50,
+  .bg-white\/60,
+  .bg-white\/70 {
+    background-color: hsl(var(--card) / 0.9) !important;
+    color: hsl(var(--card-foreground)) !important;
+  }
+
+  /* NOTE: Removed forced overrides for dark/gray text so those
+     classes remain under direct control in markup. The user will
+     manage gray text color manually in their components. */
+
+  /* Buttons with transparent backgrounds may need border color tuned */
+  .btn-secondary {
+    border-color: hsl(var(--border) / 0.12) !important;
+    color: hsl(var(--foreground)) !important;
   }
 }
 
@@ -58,3 +148,13 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+

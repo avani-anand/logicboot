@@ -67,7 +67,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
     return (
       <div className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Featured Solution Not Found</h1>
+          <h1 className="text-2xl font-bold text-gray-600 mb-4">Featured Solution Not Found</h1>
           <Link to="/" className="btn-primary">Return Home</Link>
         </div>
       </div>
@@ -97,7 +97,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
               <span className="text-4xl">{data.icon}</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-600 mb-4">
               {data.title}
             </h1>
             
@@ -122,7 +122,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
             transition={{ duration: 0.6 }}
             className="prose prose-lg max-w-none"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-600 mb-6">
               About {data.title}
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
@@ -145,7 +145,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-600 mb-4">
               Key Features
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -185,7 +185,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-600 mb-4">
               Applications
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -216,7 +216,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
       </SectionWrapper>
 
       {/* Call to Action */}
-      <SectionWrapper className={`bg-gradient-to-br ${data.color}`}>
+      <SectionWrapper className="border border-gray-600">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -233,7 +233,7 @@ The system integrates seamlessly with existing surgical equipment and provides c
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@logicboots.com"
-              className="btn-secondary bg-white text-gray-900 hover:bg-gray-100"
+              className="btn-secondary bg-white text-gray-600 hover:bg-gray-100"
             >
               Get in Touch
             </a>
