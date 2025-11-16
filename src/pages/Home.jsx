@@ -53,6 +53,7 @@ const Home = () => {
 
   const products = [
     {
+      id: "vacuum-cleaners",
       title: "Vacuum Cleaners",
       subtitle: "AI-Powered Robotic Vacuum Cleaners",
       description:
@@ -60,6 +61,7 @@ const Home = () => {
       image: "/q1.jpeg",
     },
     {
+      id: "dinkarai",
       title: "DinkarAI",
       subtitle: "AI-Powered Unmanned Aerial Vehicles",
       description:
@@ -67,6 +69,7 @@ const Home = () => {
       image: "/q2.jpg",
     },
     {
+      id: "digitizing-railways",
       title: "Digitizing Railways",
       subtitle: "GIS Cable Route Plan aur LLM for Railways",
       description:
@@ -74,6 +77,7 @@ const Home = () => {
       image: "/q8.jpg",
     },
     {
+      id: "coming-soon",
       title: "More...",
       subtitle: "Coming Soon",
       description:
