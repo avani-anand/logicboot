@@ -57,7 +57,7 @@ const About = () => {
           <h1 className="font-geist text-4xl md:text-6xl font-bold text-white mb-6">
             About Us
           </h1>
-          <p className="font-manrope text-xl text-gray-600 leading-relaxed">
+          <p className="font-manrope text-xl text-gray-800 leading-relaxed">
             Pioneering the future of AI-powered robotics to transform healthcare and household automation
           </p>
         </motion.div>

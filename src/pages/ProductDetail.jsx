@@ -13,7 +13,6 @@ import {
 	CarouselPrevious,
 } from "../components/ui/carousel";
 
-// Import all Lucide icons needed for all products
 import {
   Stethoscope, Bot, Microscope, Rocket, Zap, Wind, Clock, Leaf, Hand,
   Battery, Map, Volume2, Ruler, Scale, Wifi, Smartphone, HeartPulse,
@@ -21,7 +20,6 @@ import {
   Thermometer, Users, Target, Recycle, FlaskConical, MousePointer, Cloud
 } from "lucide-react";
 
-// Icon map to render icons from string names in productData
 const iconMap = {
   // Product Icons
   Stethoscope: <Stethoscope size={44} color="#ffffff" />,
@@ -302,7 +300,7 @@ const ProductDetail = () => {
             {data.gallery.map((item, index) => (
               <CarouselItem key={index}>
                 <div className="p-1">
-                  <Card>
+			  <Card className="border-0 shadow-none bg-transparent">
                     <CardContent className="flex aspect-square items-center justify-center p-6">
                       {item.endsWith('.mp4') ? (
                         <video

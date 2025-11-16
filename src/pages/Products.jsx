@@ -42,7 +42,7 @@ const Products = () => {
   return (
     <div className="min-h-screen pt-12">
       {/* Hero Section */}
-      <SectionWrapper className="bg-gradient-to-br from-primary-50 to-blue-600">
+      <SectionWrapper className="bg-gradient-to-br from-primary-300 to-blue-400">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

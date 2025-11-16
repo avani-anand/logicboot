@@ -17,7 +17,7 @@ export const ExpertiseList = ({
     <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${className}`}>
       {expertise.map((item, index) => (
         <motion.div
-          key={index}
+          key={item}
           initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -64,21 +64,18 @@ export const ExpertiseList = ({
             {/* Content */}
             <div className="flex items-center justify-between h-full px-4 md:px-6">
               <div className="flex-1 flex items-center space-x-3">
-                <motion.div 
+                <motion.div
                   className="w-2 h-2 rounded-full flex-shrink-0"
                   animate={{
-                    backgroundColor: hoveredIndex === index 
-                      ? 'rgb(0, 99, 225)' 
-                      : 'rgb(30, 41, 59)',
+                    backgroundColor: hoveredIndex === index ? 'rgb(0, 99, 225)' : 'rgb(30, 41, 59)',
                   }}
                   transition={{ duration: 0.3 }}
                 />
-                <motion.span 
-                  className="font-manrope font-medium"
+                <motion.span
+                  className={`font-manrope font-medium ${
+                    hoveredIndex === index ? 'text-blue-600' : 'text-gray-500'
+                  }`}
                   animate={{
-                    color: hoveredIndex === index 
-                      ? 'rgb(0, 99, 225)' 
-                      : 'rgb(55, 65, 81)',
                     fontSize: hoveredIndex === index ? '1.05rem' : '1rem',
                   }}
                   transition={{ duration: 0.3 }}
