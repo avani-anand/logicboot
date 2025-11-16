@@ -85,30 +85,30 @@ const Products = () => {
 
 
       {/* Call to Action */}
-      <SectionWrapper className="border border-gray-900">
+      <SectionWrapper className="border border-gray-900 py-6 sm:py-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto"
+          className="text-center max-w-2xl sm:max-w-3xl mx-auto px-4 sm:px-0"
         >
-          <h2 className="font-geist text-2xl md:text-3xl font-bold text-gray-200 mb-6">
+          <h2 className="font-geist text-lg sm:text-2xl md:text-3xl font-bold text-gray-200 mb-4 sm:mb-6">
             Ready to Transform Your World?
           </h2>
-          <p className="font-manrope text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="font-manrope text-sm sm:text-base md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
             Join the revolution in AI-powered robotics and experience the future of healthcare and automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@logicboots.com"
-              className="font-geist btn-primary"
+              className="font-geist btn-primary py-2 px-3 text-sm"
             >
               Get in Touch
             </a>
             <Link
               to="/about"
-              className="font-geist btn-primary"
+              className="font-geist btn-primary py-2 px-3 text-sm"
             >
               Learn More About Us
             </Link>
